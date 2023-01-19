@@ -1,0 +1,8 @@
+<div class="container">
+  <h2>TIMER</h2>
+  <form (ngSubmit)="setAlarm()" #form="ngForm">
+    <input ngModel name="seconds" type="number" placeholder="Insert Seconds" />
+    <button type="submit">Start</button>
+  </form>
+  <h3>{{ this.message }}</h3>
+</div>
